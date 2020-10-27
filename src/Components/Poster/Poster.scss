@@ -1,0 +1,21 @@
+@import '../../index.scss';
+
+.poster-container {
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.poster-img {
+  width: 284px;
+  border-radius: 50%;
+  box-shadow: -9px 4px 0 0 rgba(225, 184, 16, 0.72);
+}
+
+.poster-content {
+  font-family: $poster-font;
+  color: $primary-color;
+}

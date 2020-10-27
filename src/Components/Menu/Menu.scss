@@ -1,0 +1,33 @@
+@import '../../index.scss';
+
+.menu-container {
+  background-color: $tertiary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+}
+
+.logo {
+  width: 30vw;
+  font-family: $poster-font;
+  font-size: 20px;
+  text-shadow: 6px 0 0 $yellow;
+  margin-left: 16px;
+}
+
+.menu-content {
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  font-family: $content-font;
+  font-size: 14px;
+  color: $secondary-color;
+  margin-right: 16px;
+}
+
+.menu-content :hover {
+  color: $yellow;
+}

@@ -1,15 +1,16 @@
 import React from 'react';
 import './Poster.scss';
 import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
 import MBerjonFormal from '../../images/MBerjonFormal.jpg';
 
 function Poster() {
   return (
     <div className='poster-container'>
       <div>
-        <Fade top duration={2000}>
+        <Flip left duration={2000}>
           <img className='poster-img' src={MBerjonFormal} alt='Foto de Margarita Berjón'></img>;
-        </Fade>
+        </Flip>
       </div>
       <div className='poster-content'>
         <Fade right duration={2000}>

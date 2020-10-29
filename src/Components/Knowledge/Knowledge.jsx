@@ -3,7 +3,7 @@ import './Knowlege.scss';
 import { a } from 'react-spring';
 
 function Knowledge(props) {
-  const knowledges = ['Inglés', 'HTML', 'CSS', 'SASS', 'JS', 'React', 'SCRUM', 'GIT', 'Sketch', 'Invision'];
+  const knowledges = ['Inglés', 'UX', 'HTML', 'CSS', 'SASS', 'JS', 'React', 'SCRUM', 'GIT', 'Sketch', 'Invision'];
 
   return (
     <div className='knowledge-container'>

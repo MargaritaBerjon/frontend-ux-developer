@@ -3,6 +3,7 @@ import Menu from '../Components/Menu/Menu.jsx';
 import Poster from '../Components/Poster/Poster.jsx';
 import Title from '../Components/Title/Title.jsx';
 import AboutMe from '../Components/AboutMe/AboutMe.jsx';
+import Knowledge from '../Components/Knowledge/Knowledge.jsx';
 import { useSpring, animated } from 'react-spring';
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
         <animated.div style={TitleRightAnimation} className='right-title'>
           <Title title='Conocimientos' right='right'></Title>
         </animated.div>
+        <Knowledge></Knowledge>
       </main>
     </div>
   );

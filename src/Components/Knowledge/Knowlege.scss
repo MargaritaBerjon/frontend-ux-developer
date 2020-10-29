@@ -1,0 +1,29 @@
+@import '../../index.scss';
+
+.knowledge-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.knowledge-circle {
+  background: $secondary-color;
+  box-shadow: -7px 1px 0 0 rgba(225, 184, 16, 0.64);
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  margin: 0.5rem;
+  p {
+    font-family: $content-font;
+    color: $primary-color;
+  }
+}
+
+.back {
+  background-color: blue;
+}

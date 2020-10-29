@@ -1,1 +1,8 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
 
+.right-title {
+  align-self: flex-end;
+}

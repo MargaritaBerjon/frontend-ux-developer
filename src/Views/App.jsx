@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.scss';
 import Menu from '../Components/Menu/Menu.jsx';
 import Poster from '../Components/Poster/Poster.jsx';
@@ -41,6 +42,14 @@ function App() {
     delay: 2015,
   });
 
+  //knowlege Animation
+  const knowlegeAnimation = useSpring({
+    from: { transform: 'rotateY(1800deg)', opacity: '0%' },
+    to: { transform: 'rotateY(0deg)', opacity: '100%' },
+    config: { mass: 1, tension: 170, friction: 26, clamp: false, precision: 0.01, velocity: -1, duration: 2000 },
+    delay: 3030,
+  });
+
   return (
     <div className='App'>
       <Menu></Menu>
@@ -53,7 +62,7 @@ function App() {
         <animated.div style={TitleRightAnimation} className='right-title'>
           <Title title='Conocimientos' right='right'></Title>
         </animated.div>
-        <Knowledge></Knowledge>
+        <Knowledge knowlegeAnimation={knowlegeAnimation}></Knowledge>
       </main>
     </div>
   );

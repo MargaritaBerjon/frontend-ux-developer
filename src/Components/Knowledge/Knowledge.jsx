@@ -1,15 +1,16 @@
 import React from 'react';
 import './Knowlege.scss';
+import { a } from 'react-spring';
 
-function Knowledge() {
+function Knowledge(props) {
   const knowledges = ['Inglés', 'HTML', 'CSS', 'SASS', 'JS', 'React', 'SCRUM', 'GIT', 'Sketch', 'Invision'];
 
   return (
     <div className='knowledge-container'>
       {knowledges.map((knowledge, i) => (
-        <div className='knowledge-circle' key={i}>
+        <a.div className='knowledge-circle' key={i} style={props.knowlegeAnimation}>
           <p>{knowledge}</p>
-        </div>
+        </a.div>
       ))}
     </div>
   );

@@ -2,6 +2,7 @@ import './App.scss';
 import Menu from '../Components/Menu/Menu.jsx';
 import Poster from '../Components/Poster/Poster.jsx';
 import Title from '../Components/Title/Title.jsx';
+import AboutMe from '../Components/AboutMe/AboutMe.jsx';
 import { useSpring, animated } from 'react-spring';
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
         <animated.div style={TitleLeftAnimation}>
           <Title title='Sobre mí' left='left'></Title>
         </animated.div>
+        <AboutMe aboutme='Marketiniana digital reconvertida a frontend UX developer y con muchas ganas de continuar aprendiendo. Mis conocimientos en marketing, desarrollo y experiencia de usuario me aportan una visión completa del proceso de diseño de productos digitales. Me encantaría entrar a formar parte de una empresa en la que poder aplicar todos mis conocimientos y, al mismo tiempo, que me permita crecer y desarrollarme como frontend developer.'></AboutMe>
         <animated.div style={TitleRightAnimation} className='right-title'>
           <Title title='Conocimientos' right='right'></Title>
         </animated.div>

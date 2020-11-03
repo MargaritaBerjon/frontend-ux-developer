@@ -4,7 +4,7 @@ import './AboutMe.scss';
 function AboutMe(props) {
   return (
     <div className='about-me-container' id='AboutMe'>
-      <p>{props.aboutme} HHHHHHHHH</p>
+      <p>{props.aboutme}</p>
     </div>
   );
 }

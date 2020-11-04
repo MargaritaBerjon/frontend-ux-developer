@@ -5,6 +5,7 @@ import Poster from '../Components/Poster/Poster.jsx';
 import Title from '../Components/Title/Title.jsx';
 import AboutMe from '../Components/AboutMe/AboutMe.jsx';
 import Knowledge from '../Components/Knowledge/Knowledge.jsx';
+import Projects from '../Components/Projects/Projects.jsx';
 import { useSpring, animated } from 'react-spring';
 
 function App() {
@@ -63,6 +64,10 @@ function App() {
           <Title title='Conocimientos' right='right'></Title>
         </animated.div>
         <Knowledge knowlegeAnimation={knowlegeAnimation}></Knowledge>
+        <animated.div style={TitleLeftAnimation}>
+          <Title title='Projectos' left='left'></Title>
+        </animated.div>
+        <Projects></Projects>
       </main>
     </div>
   );

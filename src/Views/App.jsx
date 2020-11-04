@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSpring, animated } from 'react-spring';
 import './App.scss';
 import Menu from '../Components/Menu/Menu.jsx';
 import Poster from '../Components/Poster/Poster.jsx';
@@ -6,7 +7,7 @@ import Title from '../Components/Title/Title.jsx';
 import AboutMe from '../Components/AboutMe/AboutMe.jsx';
 import Knowledge from '../Components/Knowledge/Knowledge.jsx';
 import Projects from '../Components/Projects/Projects.jsx';
-import { useSpring, animated } from 'react-spring';
+import FrontendCard from '../Components/Projects/FrontendCard/FrontEndCard.jsx';
 
 function App() {
   //Poster Animations
@@ -68,6 +69,7 @@ function App() {
           <Title title='Projectos' left='left'></Title>
         </animated.div>
         <Projects></Projects>
+        <FrontendCard></FrontendCard>
       </main>
     </div>
   );

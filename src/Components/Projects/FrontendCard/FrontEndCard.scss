@@ -1,0 +1,55 @@
+@import '../../../index.scss';
+
+.frontend-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+.frond-end-card {
+  background-color: $tertiary-color;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min-content;
+
+  h2 {
+    background: #1f1b1e;
+    font-family: $title-font;
+    color: $primary-color;
+    margin: 0;
+    padding: 4px;
+    align-self: start;
+    width: 100%;
+  }
+}
+
+button {
+  background: #dfdde5;
+  border: 2px solid #e1b810;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  width: 200px;
+  padding: 4px;
+}
+
+button:active {
+  background: #e1b810;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  color: #dfdde5;
+}
+
+.project-img {
+  width: 250px;
+  padding: 0 16px 16px;
+}
+
+.logo-tecnology {
+  width: 100px;
+}
+
+.logos-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

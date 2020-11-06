@@ -2,7 +2,11 @@
 
 .frontend-container {
   display: flex;
-  flex-direction: column;
   padding: 16px;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.frontend-container-none {
+  display: none;
 }

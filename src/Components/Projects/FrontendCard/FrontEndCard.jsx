@@ -8,7 +8,7 @@ function FrontEndCard(props) {
       <div className='frond-end-card-content'>
         <div className='logos-container'>
           {props.project.languages.map((image, i) => (
-            <img className='logo-tecnology' key={i} src={image} alt='Icono de react'></img>
+            <img className='logo-tecnology' key={i} src={image} alt='Icono tecnología'></img>
           ))}
         </div>
         <img className='project-img' src={props.project.image} alt={props.project.name}></img>

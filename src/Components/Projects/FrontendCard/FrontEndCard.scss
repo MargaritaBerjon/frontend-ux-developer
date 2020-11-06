@@ -1,10 +1,5 @@
 @import '../../../index.scss';
 
-.frontend-container {
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-}
 .frond-end-card {
   background-color: $tertiary-color;
   margin-top: 16px;
@@ -20,17 +15,22 @@
     margin: 0;
     padding: 4px;
     align-self: start;
-    width: 100%;
+    width: -webkit-fill-available;
+    font-size: 16px;
   }
+}
+.frond-end-card-content {
+  padding: 16px;
 }
 
 button {
-  background: #dfdde5;
+  background: #f5f4f9;
   border: 2px solid #e1b810;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   border-radius: 15px;
-  width: 200px;
+  width: 100px;
   padding: 4px;
+  cursor: pointer;
 }
 
 button:active {
@@ -41,15 +41,16 @@ button:active {
 
 .project-img {
   width: 250px;
-  padding: 0 16px 16px;
+  // padding: 0 16px 16px;
 }
 
 .logo-tecnology {
-  width: 100px;
+  width: 40px;
+  height: 40px;
 }
 
 .logos-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 100%;
 }

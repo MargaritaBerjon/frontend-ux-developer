@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Buscador de personajes de Rick & Morty",
+    "image": "../images/buscador-personajes.png",
+    "languages": ["../images/ProjectsICons/react.png", "../images/ProjectsICons/sass.png"],
+    "repository": "https://github.com/MargaritaBerjon/buscador-de-personajes-rick-and-morty-react",
+    "project": "https://margaritaberjon.github.io/buscador-de-personajes-rick-and-morty-react"
+  },
+  {
+    "id": 2,
+    "name": "Buscador de series ",
+    "image": "../images/buscador-series.png",
+    "languages": ["../images/ProjectsICons/javascript.png", "../images/ProjectsICons/sass.png", "../images/ProjectsICons/html-5.png"],
+    "repository": "https://github.com/MargaritaBerjon/buscador-de-series",
+    "project": "https://margaritaberjon.github.io/buscador-de-series/"
+  },
+  {
+    "id": 3,
+    "name": "Cotizador de seguros",
+    "image": "../images/cotizador-seguros.png",
+    "languages": ["../images/ProjectsICons/javascript.png", "../images/ProjectsICons/css.png", "../images/ProjectsICons/html-5.png"],
+    "repository": "https://github.com/MargaritaBerjon/cotizar-seguro",
+    "project": "https://margaritaberjon.github.io/cotizar-seguro/"
+  },
+  {
+    "id": 4,
+    "name": "Gestor de tareas",
+    "image": "../images/gestor-de-tareas.png",
+    "languages": ["../images/ProjectsICons/javascript.png", "../images/ProjectsICons/css.png", "../images/ProjectsICons/html-5.png"],
+    "repository": "https://github.com/MargaritaBerjon/gestor-de-tareas",
+    "project": "https://margaritaberjon.github.io/gestor-de-tareas/"
+  },
+  {
+    "id": 5,
+    "name": "Gestor de gasto semanal",
+    "image": "../images/presupuesto-semanal.png",
+    "languages": ["../images/ProjectsICons/javascript.png", "../images/ProjectsICons/css.png", "../images/ProjectsICons/html-5.png"],
+    "repository": "https://github.com/MargaritaBerjon/gestor-gasto-semanal",
+    "project": "https://margaritaberjon.github.io/gestor-gasto-semanal/"
+  },
+  {
+    "id": 6,
+    "name": "Simulador envío de mail",
+    "image": "../images/envio-mail.png",
+    "languages": ["../images/ProjectsICons/javascript.png", "../images/ProjectsICons/css.png", "../images/ProjectsICons/html-5.png"],
+    "repository": "https://github.com/MargaritaBerjon/simulador-envio-email",
+    "project": "https://margaritaberjon.github.io/simulador-envio-email/."
+  }
+]

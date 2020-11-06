@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import './App.scss';
+import getProjects from '../Services/getProjects.js';
 import Menu from '../Components/Menu/Menu.jsx';
 import Poster from '../Components/Poster/Poster.jsx';
 import Title from '../Components/Title/Title.jsx';
 import AboutMe from '../Components/AboutMe/AboutMe.jsx';
 import Knowledge from '../Components/Knowledge/Knowledge.jsx';
+import ProjectsMenu from '../Components/Projects/ProjectsMenu.jsx';
 import Projects from '../Components/Projects/Projects.jsx';
-import FrontendCard from '../Components/Projects/FrontendCard/FrontEndCard.jsx';
 
 function App() {
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    getProjects().then((projects) => {
+      setProjects(projects);
+    });
+  }, []);
+
   //Poster Animations
   const FotoAnimation = useSpring({
     from: { transform: 'translateY(-500px)', opacity: '20%' },
@@ -66,10 +74,10 @@ function App() {
         </animated.div>
         <Knowledge knowlegeAnimation={knowlegeAnimation}></Knowledge>
         <animated.div style={TitleLeftAnimation}>
-          <Title title='Projectos' left='left'></Title>
+          <Title title='Proyectos' left='left'></Title>
         </animated.div>
-        <Projects></Projects>
-        <FrontendCard></FrontendCard>
+        <ProjectsMenu></ProjectsMenu>
+        <Projects projects={projects}></Projects>
       </main>
     </div>
   );

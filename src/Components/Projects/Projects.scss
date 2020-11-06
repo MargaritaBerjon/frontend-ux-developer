@@ -1,13 +1,8 @@
 @import '../../index.scss';
 
-.menu-projects-container {
-  background-color: $tertiary-color;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+.frontend-container {
   display: flex;
-  justify-content: space-around;
-  font-family: $content-font;
-  font-size: 14px;
-  color: $secondary-color;
-  width: 54vw;
-  padding: 4px;
+  flex-direction: column;
+  padding: 16px;
+  align-items: center;
 }

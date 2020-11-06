@@ -1,12 +1,14 @@
 import React from 'react';
 import './Projects.scss';
+import FrontEndCard from '../Projects/FrontendCard/FrontEndCard.jsx';
 
-function Projects() {
+function Projects(props) {
   return (
-    <nav className='menu-projects-container'>
-      <a href='#Frontend'>Frontend</a>
-      <a href='#UX'>UX</a>
-    </nav>
+    <section className='frontend-container'>
+      {props.projects.map((project, i) => (
+        <FrontEndCard key={i} project={project}></FrontEndCard>
+      ))}
+    </section>
   );
 }
 

@@ -75,8 +75,8 @@ function App() {
         <Knowledge knowlegeAnimation={knowlegeAnimation}></Knowledge>
         <animated.div style={TitleLeftAnimation}>
           <Title title='Proyectos' left='left'></Title>
+          <ProjectsMenu></ProjectsMenu>
         </animated.div>
-        <ProjectsMenu></ProjectsMenu>
         <Projects projects={projects}></Projects>
       </main>
     </div>

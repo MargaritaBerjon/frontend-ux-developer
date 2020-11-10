@@ -2,7 +2,7 @@ import React from 'react';
 import './FrontProjects.scss';
 import FrontEndCard from './FrontendCard/FrontEndCard.jsx';
 
-function Projects(props) {
+function FrontProjects(props) {
   return (
     <section className={props.frontendContainer}>
       {props.projects.map((project, i) => (
@@ -12,4 +12,4 @@ function Projects(props) {
   );
 }
 
-export default Projects;
+export default FrontProjects;

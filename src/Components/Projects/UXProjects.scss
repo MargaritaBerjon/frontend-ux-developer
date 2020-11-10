@@ -1,12 +1,49 @@
 @import '../../index.scss';
 
-.frontend-container {
+.UX-container {
   display: flex;
   padding: 16px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.frontend-container-none {
-  display: none;
+.UX-card {
+  background-color: $tertiary-color;
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min-content;
+  box-shadow: 0 13px 12px 0 rgba(0, 0, 0, 0.5);
+
+  h2 {
+    background: #1f1b1e;
+    font-family: $title-font;
+    color: $primary-color;
+    margin: 0;
+    padding: 4px;
+    align-self: start;
+    width: -webkit-fill-available;
+    font-size: 16px;
+  }
+}
+
+.UX-project-img {
+  padding: 16px;
+  width: 80vw;
+}
+
+.UX-card-button {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+.UX-more-info-content {
+  padding: 16px;
+  font-family: $content-font;
+
+  h3 {
+    text-transform: uppercase;
+  }
 }

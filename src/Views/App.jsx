@@ -9,6 +9,7 @@ import AboutMe from '../Components/AboutMe/AboutMe.jsx';
 import Knowledge from '../Components/Knowledge/Knowledge.jsx';
 import ProjectsMenu from '../Components/Projects/ProjectsMenu.jsx';
 import FrontProjects from '../Components/Projects/FrontProjects.jsx';
+import UXProjects from '../Components/Projects/UXProjects.jsx';
 
 function App() {
   const [projects, setProjects] = useState([]);
@@ -79,7 +80,7 @@ function App() {
           <Title title='Proyectos' left='left'></Title>
           <ProjectsMenu changeProjects={setIsFrontVisible}></ProjectsMenu>
         </animated.div>
-        {isFrontVisible ? <FrontProjects projects={projects} frontendContainer='frontend-container'></FrontProjects> : <h1>OTRO</h1>}
+        {isFrontVisible ? <FrontProjects projects={projects} frontendContainer='frontend-container'></FrontProjects> : <UXProjects></UXProjects>}
       </main>
     </div>
   );

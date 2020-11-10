@@ -10,6 +10,7 @@ import Knowledge from '../Components/Knowledge/Knowledge.jsx';
 import ProjectsMenu from '../Components/Projects/ProjectsMenu.jsx';
 import FrontProjects from '../Components/Projects/FrontProjects.jsx';
 import UXProjects from '../Components/Projects/UXProjects.jsx';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function App() {
   const [projects, setProjects] = useState([]);

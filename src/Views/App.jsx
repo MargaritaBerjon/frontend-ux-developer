@@ -8,10 +8,12 @@ import Title from '../Components/Title/Title.jsx';
 import AboutMe from '../Components/AboutMe/AboutMe.jsx';
 import Knowledge from '../Components/Knowledge/Knowledge.jsx';
 import ProjectsMenu from '../Components/Projects/ProjectsMenu.jsx';
-import Projects from '../Components/Projects/Projects.jsx';
+import FrontProjects from '../Components/Projects/FrontProjects.jsx';
 
 function App() {
   const [projects, setProjects] = useState([]);
+  const [isFrontVisible, setIsFrontVisible] = useState([]);
+
   useEffect(() => {
     getProjects().then((projects) => {
       setProjects(projects);
@@ -75,9 +77,9 @@ function App() {
         <Knowledge knowlegeAnimation={knowlegeAnimation}></Knowledge>
         <animated.div style={TitleLeftAnimation}>
           <Title title='Proyectos' left='left'></Title>
-          <ProjectsMenu></ProjectsMenu>
+          <ProjectsMenu changeProjects={setIsFrontVisible}></ProjectsMenu>
         </animated.div>
-        <Projects projects={projects}></Projects>
+        {isFrontVisible ? <FrontProjects projects={projects} frontendContainer='frontend-container'></FrontProjects> : <h1>OTRO</h1>}
       </main>
     </div>
   );

@@ -1,10 +1,10 @@
 import React from 'react';
-import './Projects.scss';
-import FrontEndCard from '../Projects/FrontendCard/FrontEndCard.jsx';
+import './FrontProjects.scss';
+import FrontEndCard from './FrontendCard/FrontEndCard.jsx';
 
 function Projects(props) {
   return (
-    <section className='frontend-container'>
+    <section className={props.frontendContainer}>
       {props.projects.map((project, i) => (
         <FrontEndCard key={i} project={project}></FrontEndCard>
       ))}

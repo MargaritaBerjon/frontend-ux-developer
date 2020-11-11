@@ -1,6 +1,7 @@
 import React from 'react';
 import './Knowlege.scss';
-import { a } from 'react-spring';
+import ScrollAnimation from 'react-animate-on-scroll';
+import 'animate.css/animate.min.css';
 
 function Knowledge(props) {
   const knowledges = ['Inglés', 'UX', 'HTML', 'CSS', 'SASS', 'JS', 'React', 'SCRUM', 'GIT', 'Sketch', 'Invision'];
@@ -8,9 +9,9 @@ function Knowledge(props) {
   return (
     <div className='knowledge-container'>
       {knowledges.map((knowledge, i) => (
-        <a.div className='knowledge-circle' key={i} style={props.knowlegeAnimation}>
+        <ScrollAnimation animateIn='animate__flipInY' className='knowledge-circle' key={i} style={props.knowlegeAnimation}>
           <p>{knowledge}</p>
-        </a.div>
+        </ScrollAnimation>
       ))}
     </div>
   );

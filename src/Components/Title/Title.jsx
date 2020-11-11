@@ -1,6 +1,8 @@
 import React from 'react';
 import './Title.scss';
 
+// {props.left ? 'title-container' : 'title-container' }
+
 function Title(props) {
   return (
     <div className='title-container'>

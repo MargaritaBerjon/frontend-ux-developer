@@ -13,10 +13,10 @@ function FrontEndCard(props) {
         </div>
         <img className='project-img' src={props.project.image} alt={props.project.name}></img>
         <div className='logos-container'>
-          <a href={props.project.project} target='_blank' rel='noreferrer'>
+          <a href={props.project.project} target='_blank' rel='noopener noreferrer'>
             <button>Proyecto</button>
           </a>
-          <a href={props.project.repository} target='_blank' rel='noreferrer'>
+          <a href={props.project.repository} target='_blank' rel='noopener noreferrer'>
             <button>Repositorio</button>
           </a>
         </div>

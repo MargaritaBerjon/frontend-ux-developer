@@ -1,0 +1,28 @@
+@import '../../index.scss';
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  & button {
+    align-self: center;
+  }
+}
+
+.form-name-email-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-form {
+  background: #d8d8d8;
+  border: 0;
+  outline: none;
+  width: 50vw;
+  margin: 16px;
+  padding: 16px;
+}
+
+.text-area {
+  width: unset;
+}

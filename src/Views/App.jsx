@@ -9,6 +9,7 @@ import Knowledge from '../Components/Knowledge/Knowledge.jsx';
 import ProjectsMenu from '../Components/Projects/ProjectsMenu.jsx';
 import FrontProjects from '../Components/Projects/FrontProjects.jsx';
 import UXProjects from '../Components/Projects/UXProjects.jsx';
+import Contact from '../Components/Contact/Contact.jsx';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.min.css';
 
@@ -40,6 +41,10 @@ function App() {
           <ProjectsMenu changeProjects={setIsFrontVisible}></ProjectsMenu>
         </ScrollAnimation>
         {isFrontVisible ? <FrontProjects projects={projects} frontendContainer='frontend-container'></FrontProjects> : <UXProjects></UXProjects>}
+        <ScrollAnimation animateIn='fadeInRight animate__fadeInRight' className='right-title'>
+          <Title title='Contacto'></Title>
+        </ScrollAnimation>
+        <Contact></Contact>
       </main>
     </div>
   );

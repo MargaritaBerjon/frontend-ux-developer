@@ -10,6 +10,7 @@ import ProjectsMenu from '../Components/Projects/ProjectsMenu.jsx';
 import FrontProjects from '../Components/Projects/FrontProjects.jsx';
 import UXProjects from '../Components/Projects/UXProjects.jsx';
 import Contact from '../Components/Contact/Contact.jsx';
+import Footer from '../Components/Footer/Footer.jsx';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.min.css';
 
@@ -46,6 +47,7 @@ function App() {
         </ScrollAnimation>
         <Contact></Contact>
       </main>
+      <Footer copy='© Magarita Berjón' year='2020'></Footer>
     </div>
   );
 }

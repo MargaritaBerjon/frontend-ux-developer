@@ -1,0 +1,26 @@
+@import '../../index.scss';
+
+.Footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary-color;
+  width: 100%;
+  height: 5rem;
+  margin-top: 16px;
+
+  & small {
+    color: $primary-color;
+    font-family: $content-font;
+  }
+
+  & hr {
+    border: 1px solid $yellow;
+    width: 140px;
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 13px;
+    margin-block-end: 0;
+  }
+}

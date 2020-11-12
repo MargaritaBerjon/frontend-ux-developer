@@ -32,7 +32,7 @@ function App() {
       <main className='main-container'>
         <ScrollAnimation animateIn='fadeInLeft animate__fadeInLeft' animateOnce={true}>
         <Element name='AboutMe'> <Title title='Sobre mí'></Title></Element>
-          <AboutMe aboutme='Marketiniana digital reconvertida a frontend UX developer y con muchas ganas de continuar aprendiendo. Mis conocimientos en marketing, desarrollo y experiencia de usuario me aportan una visión completa del proceso de diseño de productos digitales. Me encantaría entrar a formar parte de una empresa en la que poder aplicar todos mis conocimientos y, al mismo tiempo, que me permita crecer y desarrollarme como frontend developer.'></AboutMe>
+          <AboutMe aboutme='"Marketiniana digital reconvertida a frontend UX developer y con muchas ganas de continuar aprendiendo. Mis conocimientos en marketing, desarrollo y experiencia de usuario me aportan una visión completa del proceso de diseño de productos digitales. Me encantaría entrar a formar parte de una empresa en la que poder aplicar todos mis conocimientos y, al mismo tiempo, que me permita crecer y desarrollarme como frontend developer".'></AboutMe>
         </ScrollAnimation>
         <ScrollAnimation animateIn='fadeInRight animate__fadeInRight' animateOnce={true} className='right-title'>
         <Title title='Conocimientos'></Title>

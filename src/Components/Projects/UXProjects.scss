@@ -2,8 +2,10 @@
 
 .UX-container {
   display: flex;
+  flex-direction: column;
   padding: 16px;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -45,5 +47,22 @@
 
   h3 {
     text-transform: uppercase;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .UX-container {
+    flex-wrap: nowrap;
+  }
+  .UX-card {
+    h2 {
+      font-size: 18px;
+      padding: 10px;
+    }
+  }
+
+  .UX-project-img {
+    padding: 16px;
+    width: 50vw;
   }
 }

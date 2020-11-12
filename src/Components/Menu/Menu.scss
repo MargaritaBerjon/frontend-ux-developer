@@ -32,3 +32,9 @@
 .menu-content :hover {
   color: $yellow;
 }
+
+@media all and (min-width: 1280px) {
+  .menu-content {
+    margin-right: 20px;
+  }
+}

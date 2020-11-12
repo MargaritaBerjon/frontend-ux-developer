@@ -23,3 +23,12 @@
     margin-inline-start: 0;
   }
 }
+
+@media all and (min-width: 1280px) {
+  .title-container {
+    width: 30vw;
+    & h1 {
+      font-size: 30px;
+    }
+  }
+}

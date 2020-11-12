@@ -19,3 +19,15 @@
   font-family: $poster-font;
   color: $primary-color;
 }
+
+@media all and (min-width: 1280px) {
+  .poster-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .poster-img {
+    margin-right: 20px;
+    width: 400px;
+  }
+}

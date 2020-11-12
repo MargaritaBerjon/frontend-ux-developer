@@ -11,3 +11,9 @@
   width: 54vw;
   padding: 4px;
 }
+@media all and (min-width: 1280px) {
+  .menu-projects-container {
+    width: 20vw;
+    font-size: 16px;
+  }
+}

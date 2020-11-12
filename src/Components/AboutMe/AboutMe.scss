@@ -3,4 +3,12 @@
 .about-me-container {
   font-family: $content-font;
   padding: 16px;
+  font-style: italic;
+}
+
+@media all and (min-width: 1280px) {
+  .about-me-container {
+    padding: 0 204px 0;
+    font-size: 24px;
+  }
 }

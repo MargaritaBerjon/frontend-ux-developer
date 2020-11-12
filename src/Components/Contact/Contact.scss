@@ -35,3 +35,12 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+@media all and (min-width: 1280px) {
+  .form-container {
+    padding: 25px 204px 0;
+  }
+  .contact-logos {
+    padding: 0 204px 0;
+  }
+}

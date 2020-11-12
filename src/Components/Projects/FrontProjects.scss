@@ -6,3 +6,9 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+@media all and (min-width: 1280px) {
+  .frontend-container {
+    padding: 0 204px 0;
+  }
+}

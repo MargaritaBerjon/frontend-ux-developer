@@ -24,3 +24,14 @@
     color: $primary-color;
   }
 }
+
+@media all and (min-width: 1280px) {
+  .knowledge-container {
+    padding: 0 204px 0;
+  }
+  .knowledge-circle {
+    height: 5rem;
+    width: 5rem;
+    font-size: 16px;
+  }
+}

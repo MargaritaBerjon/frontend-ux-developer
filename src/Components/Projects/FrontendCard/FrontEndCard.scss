@@ -42,7 +42,6 @@ button:active {
 
 .project-img {
   width: 250px;
-  // padding: 0 16px 16px;
 }
 
 .logo-tecnology {
@@ -54,4 +53,14 @@ button:active {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+}
+
+@media all and (min-width: 1280px) {
+  .frond-end-card {
+    width: 20vw;
+    h2 {
+      font-size: 18px;
+      padding: 10px;
+    }
+  }
 }

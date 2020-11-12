@@ -11,6 +11,7 @@
 
 .form-name-email-container {
   display: flex;
+
   justify-content: space-between;
 }
 
@@ -18,13 +19,16 @@
   background: #d8d8d8;
   border: 0;
   outline: none;
-  width: 50vw;
-  margin: 16px;
+  width: 50%;
+  font-size: 14px;
   padding: 16px;
 }
 
 .text-area {
   width: unset;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  height: 100px;
 }
 
 .contact-logos {

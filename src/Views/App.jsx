@@ -29,20 +29,20 @@ function App() {
       <Menu></Menu>
       <Poster name='Margarita Berjón' description='Frontend UX developer'></Poster>
       <main className='main-container'>
-        <ScrollAnimation animateIn='fadeInLeft animate__fadeInLeft'>
+        <ScrollAnimation animateIn='fadeInLeft animate__fadeInLeft' animateOnce={true} id='AboutMe'>
           <Title title='Sobre mí'></Title>
           <AboutMe aboutme='Marketiniana digital reconvertida a frontend UX developer y con muchas ganas de continuar aprendiendo. Mis conocimientos en marketing, desarrollo y experiencia de usuario me aportan una visión completa del proceso de diseño de productos digitales. Me encantaría entrar a formar parte de una empresa en la que poder aplicar todos mis conocimientos y, al mismo tiempo, que me permita crecer y desarrollarme como frontend developer.'></AboutMe>
         </ScrollAnimation>
-        <ScrollAnimation animateIn='fadeInRight animate__fadeInRight' className='right-title'>
+        <ScrollAnimation animateIn='fadeInRight animate__fadeInRight' animateOnce={true} className='right-title'>
           <Title title='Conocimientos'></Title>
         </ScrollAnimation>
         <Knowledge></Knowledge>
-        <ScrollAnimation animateIn='fadeInLeft animate__fadeInLeft'>
+        <ScrollAnimation animateIn='fadeInLeft animate__fadeInLeft' animateOnce={true}>
           <Title title='Proyectos'></Title>
           <ProjectsMenu changeProjects={setIsFrontVisible}></ProjectsMenu>
         </ScrollAnimation>
         {isFrontVisible ? <FrontProjects projects={projects} frontendContainer='frontend-container'></FrontProjects> : <UXProjects></UXProjects>}
-        <ScrollAnimation animateIn='fadeInRight animate__fadeInRight' className='right-title'>
+        <ScrollAnimation animateIn='fadeInRight animate__fadeInRight' animateOnce={true} className='right-title'>
           <Title title='Contacto'></Title>
         </ScrollAnimation>
         <Contact></Contact>

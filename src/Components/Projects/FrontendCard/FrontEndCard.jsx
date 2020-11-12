@@ -1,9 +1,11 @@
 import React from 'react';
 import './FrontEndCard.scss';
+import ScrollAnimation from 'react-animate-on-scroll';
+import 'animate.css/animate.min.css';
 
 function FrontEndCard(props) {
   return (
-    <div className='frond-end-card'>
+    <ScrollAnimation animateIn='animate__fadeInTopLeft' animateOnce={true} className='frond-end-card'>
       <h2>{props.project.name}</h2>
       <div className='frond-end-card-content'>
         <div className='logos-container'>
@@ -21,7 +23,7 @@ function FrontEndCard(props) {
           </a>
         </div>
       </div>
-    </div>
+    </ScrollAnimation>
   );
 }
 

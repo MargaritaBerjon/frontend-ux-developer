@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './UXProjects.scss';
 import Lime from '../../images/lime.jpg';
 import DecideMad from '../../images/decidemad.jpg';
+import ScrollAnimation from 'react-animate-on-scroll';
+import 'animate.css/animate.min.css';
 
 function UXProjects() {
   const [isVisibleMoreInfo, setIsVisibleMoreInfo] = useState(false);
@@ -9,7 +11,7 @@ function UXProjects() {
 
   return (
     <section className='UX-container'>
-      <div className='UX-card'>
+      <ScrollAnimation animateIn='animate__fadeInTopLeft' animateOnce={true} className='UX-card'>
         <h2>Caso Lime</h2>
         <div className='UX-card-content'>
           <img className='UX-project-img' src={Lime} alt='proyecto lime'></img>
@@ -42,8 +44,8 @@ function UXProjects() {
             <button onClick={() => setIsVisibleMoreInfo((old) => !old)}>{isVisibleMoreInfo ? 'Cerrar' : 'Más info'}</button>
           </div>
         </div>
-      </div>
-      <div className='UX-card'>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn='animate__fadeInTopLeft' animateOnce={true} className='UX-card'>
         <h2>Caso Decide Madrid</h2>
         <div className='UX-card-content'>
           <img className='UX-project-img' src={DecideMad} alt='proyecto lime'></img>
@@ -81,7 +83,7 @@ function UXProjects() {
             <button onClick={() => setIsVisibleMoreInfoTwo((oldTwo) => !oldTwo)}>{isVisibleMoreInfoTwo ? 'Cerrar' : 'Más info'}</button>
           </div>
         </div>
-      </div>
+      </ScrollAnimation>
     </section>
   );
 }

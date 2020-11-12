@@ -1,4 +1,13 @@
 [
+
+  {
+    "id": 7,
+    "name": "Porfolio Margarita Berjón",
+    "image": "../images/porfolio.png",
+    "languages": ["../images/ProjectsICons/react.png", "../images/ProjectsICons/sass.png"],
+    "repository": "https://github.com/MargaritaBerjon/frontend-ux-developer",
+    "project": "https://mberjonfrontenddeveloper.netlify.app/"
+  },
   {
     "id": 1,
     "name": "Buscador de personajes de Rick & Morty",

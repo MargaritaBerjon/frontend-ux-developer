@@ -9,7 +9,7 @@ function Knowledge(props) {
   return (
     <div className='knowledge-container'>
       {knowledges.map((knowledge, i) => (
-        <ScrollAnimation animateIn='animate__flipInY' className='knowledge-circle' key={i} style={props.knowlegeAnimation}>
+        <ScrollAnimation animateIn='animate__flipInY' animateOnce={true} className='knowledge-circle' key={i} style={props.knowlegeAnimation}>
           <p>{knowledge}</p>
         </ScrollAnimation>
       ))}

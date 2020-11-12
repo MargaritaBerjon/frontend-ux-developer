@@ -1,6 +1,7 @@
 import React from 'react';
 import './AboutMe.scss';
 
+
 function AboutMe(props) {
   return (
     <div className='about-me-container'>

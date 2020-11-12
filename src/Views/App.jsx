@@ -13,6 +13,7 @@ import Contact from '../Components/Contact/Contact.jsx';
 import Footer from '../Components/Footer/Footer.jsx';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.min.css';
+import { Element } from 'react-scroll';
 
 function App() {
   const [projects, setProjects] = useState([]);
@@ -29,21 +30,21 @@ function App() {
       <Menu></Menu>
       <Poster name='Margarita Berjón' description='Frontend UX developer'></Poster>
       <main className='main-container'>
-        <ScrollAnimation animateIn='fadeInLeft animate__fadeInLeft' animateOnce={true} id='AboutMe'>
-          <Title title='Sobre mí'></Title>
+        <ScrollAnimation animateIn='fadeInLeft animate__fadeInLeft' animateOnce={true}>
+        <Element name='AboutMe'> <Title title='Sobre mí'></Title></Element>
           <AboutMe aboutme='Marketiniana digital reconvertida a frontend UX developer y con muchas ganas de continuar aprendiendo. Mis conocimientos en marketing, desarrollo y experiencia de usuario me aportan una visión completa del proceso de diseño de productos digitales. Me encantaría entrar a formar parte de una empresa en la que poder aplicar todos mis conocimientos y, al mismo tiempo, que me permita crecer y desarrollarme como frontend developer.'></AboutMe>
         </ScrollAnimation>
         <ScrollAnimation animateIn='fadeInRight animate__fadeInRight' animateOnce={true} className='right-title'>
-          <Title title='Conocimientos'></Title>
+        <Title title='Conocimientos'></Title>
         </ScrollAnimation>
         <Knowledge></Knowledge>
         <ScrollAnimation animateIn='fadeInLeft animate__fadeInLeft' animateOnce={true}>
-          <Title title='Proyectos'></Title>
+        <Element name='projects'> <Title title='Proyectos'></Title></Element>
           <ProjectsMenu changeProjects={setIsFrontVisible}></ProjectsMenu>
         </ScrollAnimation>
         {isFrontVisible ? <FrontProjects projects={projects} frontendContainer='frontend-container'></FrontProjects> : <UXProjects></UXProjects>}
         <ScrollAnimation animateIn='fadeInRight animate__fadeInRight' animateOnce={true} className='right-title'>
-          <Title title='Contacto'></Title>
+        <Element name='Contact'> <Title title='Contacto'></Title></Element>
         </ScrollAnimation>
         <Contact></Contact>
       </main>

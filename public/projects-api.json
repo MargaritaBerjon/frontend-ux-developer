@@ -5,7 +5,7 @@
     "name": "Porfolio Margarita Berjón",
     "image": "../images/porfolio.png",
     "languages": ["../images/ProjectsICons/react.png", "../images/ProjectsICons/sass.png"],
-    "repository": "https://github.com/MargaritaBerjon",
+    "repository": "https://github.com/MargaritaBerjon/frontend-ux-developer",
     "project": "http://prueba.avstreaming.es/register#/"
   },
   {
@@ -13,7 +13,7 @@
     "name": "Streaming",
     "image": "../images/streaming.png",
     "languages": ["../images/ProjectsICons/react.png", "../images/ProjectsICons/css.png"],
-    "repository": "https://github.com/MargaritaBerjon/frontend-ux-developer",
+    "repository": "https://github.com/MargaritaBerjon",
     "project": "https://mberjonfrontenddeveloper.netlify.app/"
   },
 

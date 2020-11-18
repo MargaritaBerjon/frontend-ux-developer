@@ -36,6 +36,10 @@
   justify-content: space-evenly;
 }
 
+.input-required {
+  border: 1px solid red;
+}
+
 @media all and (min-width: 1280px) {
   .form-container {
     padding: 25px 204px 0;

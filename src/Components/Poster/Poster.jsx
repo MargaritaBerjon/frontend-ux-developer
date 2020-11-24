@@ -1,6 +1,7 @@
 import React from 'react';
 import './Poster.scss';
-import MBerjonFormal from '../../images/MBerjonFormal.jpg';
+import MBerjon from '../../images/Margarita_Berjón_web.jpg';
+
 import { Animated } from 'react-animated-css';
 import 'animate.css/animate.min.css';
 
@@ -8,7 +9,7 @@ function Poster(props) {
   return (
     <div className='poster-container'>
       <Animated animationIn='fadeInDown' animationInDuration={2000}>
-        <img className='poster-img' src={MBerjonFormal} alt='Foto de Margarita Berjón'></img>
+        <img className='poster-img' src={MBerjon} alt='Foto de Margarita Berjón'></img>
       </Animated>
       <div className='poster-content'>
         <Animated animationIn='fadeInLeft' animationInDuration={2000}>
